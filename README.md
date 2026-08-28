@@ -6,9 +6,9 @@ Voyager = observador operacional. Papel: coordenar atividades, receber dados, mo
 
 ## Status
 
-- Estado atual: planejamento inicial
+- Estado atual: design aprovado, aguardando revisão do spec
 - Última atualização: 2026-08-28
-- Última parada: fase 0, definição inicial do produto e criação dos repositórios
+- Última parada: spec da fase 1 do frontend escrito; próximo passo = revisão do spec e plano de implementação
 
 ## Stack
 
@@ -75,4 +75,4 @@ Sempre que uma fase subir:
 
 ## Próximo passo
 
-Definir fundação do frontend e estrutura inicial de navegação.
+Revisar spec da fundação do frontend e gerar plano de implementação TDD.
