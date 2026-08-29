@@ -8,7 +8,7 @@ Voyager = observador operacional. Papel: coordenar atividades, receber dados, mo
 
 - Estado atual: fase 3 concluída
 - Última atualização: 2026-08-29
-- Última parada: dashboard operacional inicial entregue com cards de visão geral; próximo passo = fase 4, módulos municípios e unidades
+- Última parada: layout do Stitch aplicado ao shell e dashboard responsivo, com métricas, atividade recente e prioridades; próximo passo = fase 4, módulos municípios e unidades
 
 ## Stack
 
