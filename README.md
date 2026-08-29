@@ -6,9 +6,9 @@ Voyager = observador operacional. Papel: coordenar atividades, receber dados, mo
 
 ## Status
 
-- Estado atual: fase 3 concluída
+- Estado atual: fase 4 concluída
 - Última atualização: 2026-08-29
-- Última parada: layout do Stitch aplicado ao shell e dashboard responsivo, com métricas, atividade recente e prioridades; próximo passo = fase 4, módulos municípios e unidades
+- Última parada: telas Stitch de municípios, unidades, cadastro de unidade, convênios, pendências e documentos entregues; próximo bloco visual = administração, permissões e importação
 
 ## Stack
 
@@ -24,7 +24,7 @@ Voyager = observador operacional. Papel: coordenar atividades, receber dados, mo
 - [x] Fase 1: definir arquitetura front, layout base, navegação, design tokens
 - [x] Fase 2: autenticação, sessão, guardas de rota, tratamento 401/403
 - [x] Fase 3: dashboard operacional inicial
-- [ ] Fase 4: módulo municípios e unidades
+- [x] Fase 4: módulo municípios e unidades
 - [ ] Fase 5: módulo convênios e projetos
 - [ ] Fase 6: módulo documentos e requisitos
 - [ ] Fase 7: módulo pendências
@@ -75,4 +75,4 @@ Sempre que uma fase subir:
 
 ## Próximo passo
 
-Executar fase 4: módulos municípios e unidades.
+Executar próximo bloco visual do Stitch: usuários, papéis/permissões e importação de dados.

@@ -1,10 +1,13 @@
+'use client';
+
 import { ReactNode } from 'react';
+import { usePathname } from 'next/navigation';
 
 type AppShellProps = { children: ReactNode };
 
 const navItems = [
-  ['Dashboard', 'grid', '/dashboard'], ['Municípios', 'pin', '#'], ['Unidades', 'building', '#'],
-  ['Convênios', 'handshake', '#'], ['Pendências', 'alert', '#'], ['Documentos', 'file', '#'],
+  ['Dashboard', 'grid', '/dashboard'], ['Municípios', 'pin', '/municipios'], ['Unidades', 'building', '/unidades'],
+  ['Convênios', 'handshake', '/convenios'], ['Pendências', 'alert', '/pendencias'], ['Documentos', 'file', '/documentos'],
 ] as const;
 
 function Icon({ name }: { name: string }) {
@@ -22,11 +25,12 @@ function Icon({ name }: { name: string }) {
 }
 
 export function AppShell({ children }: AppShellProps) {
+  const pathname = usePathname();
   return <div className="app-shell">
     <aside className="sidebar">
       <div className="brand"><span className="brand-mark">V</span><span><strong>Voyager Console</strong><small>Observador operacional</small></span></div>
       <button className="new-observation" type="button"><span>+</span> Nova observação</button>
-      <nav aria-label="Navegação principal" className="sidebar-nav"><ul>{navItems.map(([label, icon, href], index) => <li key={label}><a aria-current={index === 0 ? 'page' : undefined} className={index === 0 ? 'active' : ''} href={href}><Icon name={icon} /><span>{label}</span></a></li>)}</ul></nav>
+      <nav aria-label="Navegação principal" className="sidebar-nav"><ul>{navItems.map(([label, icon, href]) => { const active = pathname === href || (href !== '/dashboard' && pathname.startsWith(`${href}/`)); return <li key={label}><a aria-current={active ? 'page' : undefined} className={active ? 'active' : ''} href={href}><Icon name={icon} /><span>{label}</span></a></li>; })}</ul></nav>
       <div className="sidebar-bottom"><a href="#"><Icon name="settings" /><span>Configurações</span></a><a href="#"><Icon name="support" /><span>Suporte</span></a><div className="user-card"><span className="avatar">A</span><span><strong>Administrador</strong><small>admin@voyager.local</small></span></div></div>
     </aside>
     <main className="app-main">{children}</main>
