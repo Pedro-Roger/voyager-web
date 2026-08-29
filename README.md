@@ -6,9 +6,9 @@ Voyager = observador operacional. Papel: coordenar atividades, receber dados, mo
 
 ## Status
 
-- Estado atual: fase 2 concluída
-- Última atualização: 2026-08-28
-- Última parada: login base, utilitários de sessão e guarda mínima entregues; próximo passo = fase 3, dashboard operacional inicial
+- Estado atual: fase 3 concluída
+- Última atualização: 2026-08-29
+- Última parada: dashboard operacional inicial entregue com cards de visão geral; próximo passo = fase 4, módulos municípios e unidades
 
 ## Stack
 
@@ -23,7 +23,7 @@ Voyager = observador operacional. Papel: coordenar atividades, receber dados, mo
 - [x] Fase 0: criar repositório público e roadmap inicial
 - [x] Fase 1: definir arquitetura front, layout base, navegação, design tokens
 - [x] Fase 2: autenticação, sessão, guardas de rota, tratamento 401/403
-- [ ] Fase 3: dashboard operacional inicial
+- [x] Fase 3: dashboard operacional inicial
 - [ ] Fase 4: módulo municípios e unidades
 - [ ] Fase 5: módulo convênios e projetos
 - [ ] Fase 6: módulo documentos e requisitos
@@ -75,4 +75,4 @@ Sempre que uma fase subir:
 
 ## Próximo passo
 
-Executar fase 3: dashboard operacional inicial.
+Executar fase 4: módulos municípios e unidades.
