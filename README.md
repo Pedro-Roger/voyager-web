@@ -8,7 +8,7 @@ Voyager = observador operacional. Papel: coordenar atividades, receber dados, mo
 
 - Estado atual: fase 4 concluída
 - Última atualização: 2026-08-29
-- Última parada: telas Stitch de municípios, unidades, cadastro de unidade, convênios, pendências e documentos entregues; próximo bloco visual = administração, permissões e importação
+- Última parada: todas as telas atualmente visíveis no Stitch reproduzidas, incluindo operação, detalhes, importação, usuários e permissões; próximo passo = conectar telas às APIs reais
 
 ## Stack
 
@@ -75,4 +75,4 @@ Sempre que uma fase subir:
 
 ## Próximo passo
 
-Executar próximo bloco visual do Stitch: usuários, papéis/permissões e importação de dados.
+Conectar municípios e unidades à API real, substituindo dados demonstrativos.

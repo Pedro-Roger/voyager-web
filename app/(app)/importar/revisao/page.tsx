@@ -1,0 +1,6 @@
+import { ImportStepper } from '../../../../components/import-stepper';
+
+const rows = [['001', 'João Pereira', 'Fortaleza', 'Secretaria de Saúde', 'Válido'], ['002', 'Marina Costa', 'Sobral', 'Secretaria de Educação', 'Válido'], ['003', 'Rafael Lima', 'Caucaia', 'Hospital Municipal', 'Revisar']];
+export default function ImportReviewPage() {
+  return <section className="flow-page"><ImportStepper current={1} /><header><p className="eyebrow">IMPORTAÇÃO</p><h1>Revisar dados importados</h1><p>Confira amostra e alertas antes de mapear as colunas.</p></header><div className="flow-card"><div className="review-summary"><span><strong>1.248</strong> linhas detectadas</span><span><strong>12</strong> alertas</span><span><strong>3</strong> erros</span></div><div className="management-table-wrap"><table><thead><tr><th>ID</th><th>Nome</th><th>Município</th><th>Unidade</th><th>Validação</th></tr></thead><tbody>{rows.map((row) => <tr key={row[0]}>{row.map((cell, index) => <td key={cell}>{index === 4 ? <span className={`status ${cell === 'Válido' ? 'status-ativo' : 'status-pendente'}`}>{cell}</span> : cell}</td>)}</tr>)}</tbody></table></div><div className="flow-actions"><a href="/importar">Voltar</a><a className="primary-action" href="/importar/mapeamento">Continuar</a></div></div></section>;
+}

@@ -8,6 +8,7 @@ type AppShellProps = { children: ReactNode };
 const navItems = [
   ['Dashboard', 'grid', '/dashboard'], ['Municípios', 'pin', '/municipios'], ['Unidades', 'building', '/unidades'],
   ['Convênios', 'handshake', '/convenios'], ['Pendências', 'alert', '/pendencias'], ['Documentos', 'file', '/documentos'],
+  ['Importar dados', 'file', '/importar'], ['Usuários', 'building', '/usuarios'], ['Permissões', 'settings', '/permissoes'],
 ] as const;
 
 function Icon({ name }: { name: string }) {

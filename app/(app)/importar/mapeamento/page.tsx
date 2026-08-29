@@ -1,0 +1,6 @@
+import { ImportStepper } from '../../../../components/import-stepper';
+
+const mappings = [['Nome', 'Nome completo'], ['Município', 'Município'], ['Unidade', 'Unidade executora'], ['E-mail', 'E-mail'], ['Telefone', 'Telefone']];
+export default function ImportMappingPage() {
+  return <section className="flow-page"><ImportStepper current={2} /><header><p className="eyebrow">IMPORTAÇÃO</p><h1>Mapear colunas</h1><p>Relacione cada coluna do arquivo a um campo do Voyager.</p></header><div className="flow-card mapping-card"><div className="mapping-head"><span>Coluna no arquivo</span><span>Campo no Voyager</span><span>Estado</span></div>{mappings.map(([source, target], index) => <div className="mapping-row" key={source}><strong>{source}</strong><label><span className="sr-only">Coluna {source}</span><select aria-label={`Coluna ${source}`} defaultValue={target}><option>{target}</option><option>Ignorar coluna</option></select></label><span className={index === 4 ? 'mapping-warning' : 'mapping-ok'}>{index === 4 ? 'Opcional' : 'Mapeado'}</span></div>)}<div className="flow-actions"><a href="/importar/revisao">Voltar</a><a className="primary-action" href="/importar/sucesso">Iniciar importação</a></div></div></section>;
+}
