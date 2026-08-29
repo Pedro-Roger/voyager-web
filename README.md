@@ -6,9 +6,9 @@ Voyager = observador operacional. Papel: coordenar atividades, receber dados, mo
 
 ## Status
 
-- Estado atual: design aprovado, aguardando revisão do spec
-- Última atualização: 2026-08-28
-- Última parada: spec da fase 1 do frontend escrito; próximo passo = revisão do spec e plano de implementação
+- Estado atual: fase 1 concluída
+- Última atualização: 2026-08-29
+- Última parada: fundação do frontend entregue com Next.js, shell inicial, config pública e cliente HTTP base; próximo passo = fase 2, autenticação e proteção de rota
 
 ## Stack
 
@@ -21,7 +21,7 @@ Voyager = observador operacional. Papel: coordenar atividades, receber dados, mo
 ## Etapas
 
 - [x] Fase 0: criar repositório público e roadmap inicial
-- [ ] Fase 1: definir arquitetura front, layout base, navegação, design tokens
+- [x] Fase 1: definir arquitetura front, layout base, navegação, design tokens
 - [ ] Fase 2: autenticação, sessão, guardas de rota, tratamento 401/403
 - [ ] Fase 3: dashboard operacional inicial
 - [ ] Fase 4: módulo municípios e unidades
@@ -75,4 +75,4 @@ Sempre que uma fase subir:
 
 ## Próximo passo
 
-Revisar spec da fundação do frontend e gerar plano de implementação TDD.
+Executar fase 2: autenticação, sessão, guardas de rota e tratamento 401/403.
